@@ -1,20 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Convex Starter with Clerk Authentication
 
-## Getting Started
+This repository showcases the integration of Clerk authentication with a Convex backend in a Next.js application. It's designed for developers building real-time apps with user authentication.
 
-First, run the development server:
+## Next.js 14 for the frontend
+
+Convex as the backend and real-time database
+Clerk for user authentication and management
+TypeScript support
+TailwindCSS for styling
+
+## Prerequisites
+
+- Before you begin, ensure you have the following installed:
+
+- Node.js (LTS version recommended)
+  npm, yarn, or pnpm
+
+## Set up environment variables
+
+- Copy the .env.sample.example file to .env.local
+- Fill in the required environment variables (Convex and Clerk keys)
+
+### First, run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Project Structure
+
+1. app/: Contains the Next.js pages and components
+2. convex/: Houses the Convex backend code
+3. middleware.ts: Configures Clerk authentication middleware
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
